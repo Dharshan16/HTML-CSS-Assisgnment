@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main {
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .question {
+    flex: 2;
+    padding: 20px;
+    border-left: 1px solid #e0e0e0;
+  }
+  
+  .question-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .mcq-label {
+    background-color:#e1dcdc;
+    color: black;
+    padding: 5px 5px;
+    border-radius: 10px;
+  }
+  
+  .difficulty {
+    background-color: #fff2e6;
+    color: #ff8c00;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 15px;
+  }
+  
+  .status {
+    color: black;
+    margin-bottom: 20px;
+    background-color: #e1dcdc;
+    padding: 10px 5px;
+    border-radius: 10px;
+    margin-left: 20px;
+    max-width: 75px;
+  }
+  
+  .options {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .option .option-text {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .option input:checked + .option-text {
+    background: lightgreen;
+    color: white;
+  }
+  
+  .dashboard {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff9f5;
+  }
+  
+  select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #ffa73cff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    padding: 0;
+    list-style-type: none;
+    margin-bottom: 20px;
+  }
+  
+  .grid li {
+    background-color: #e0e0e0;
+    color: #333;
+    padding: 12px;
+    text-align: center;
+    border-radius: 60px;
+    width: 30px;
+    height: 30px;
+  }
+  
+  .grid li.active {
+    background-color: #ffa73cff;
+    color: white;
+  }
+  
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .stats li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
